@@ -15,68 +15,68 @@ module.exports = (theme) => ({
       {
         color: theme('colors.gray.700', defaultTheme.colors.gray[700]),
         maxWidth: '65ch',
-        '[class~="lead"]': {
+        '[class~="lead"]:not(.unprose)': {
           color: theme('colors.gray.600', defaultTheme.colors.gray[600]),
         },
-        a: {
+        'a:not(.unprose)': {
           color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
           textDecoration: 'underline',
           fontWeight: '500',
         },
-        strong: {
+        'strong:not(.unprose)': {
           color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
           fontWeight: '600',
         },
-        'ol[type="A"]': {
+        'ol[type="A"]:not(.unprose)': {
           '--list-counter-style': 'upper-alpha',
         },
-        'ol[type="a"]': {
+        'ol[type="a"]:not(.unprose)': {
           '--list-counter-style': 'lower-alpha',
         },
-        'ol[type="A s"]': {
+        'ol[type="A s"]:not(.unprose)': {
           '--list-counter-style': 'upper-alpha',
         },
-        'ol[type="a s"]': {
+        'ol[type="a s"]:not(.unprose)': {
           '--list-counter-style': 'lower-alpha',
         },
-        'ol[type="I"]': {
+        'ol[type="I"]:not(.unprose)': {
           '--list-counter-style': 'upper-roman',
         },
-        'ol[type="i"]': {
+        'ol[type="i"]:not(.unprose)': {
           '--list-counter-style': 'lower-roman',
         },
-        'ol[type="I s"]': {
+        'ol[type="I s"]:not(.unprose)': {
           '--list-counter-style': 'upper-roman',
         },
-        'ol[type="i s"]': {
+        'ol[type="i s"]:not(.unprose)': {
           '--list-counter-style': 'lower-roman',
         },
-        'ol[type="1"]': {
+        'ol[type="1"]:not(.unprose)': {
           '--list-counter-style': 'decimal',
         },
-        'ol > li': {
+        'ol:not(.unprose) > li': {
           position: 'relative',
         },
-        'ol > li::before': {
+        'ol:not(.unprose) > li::before': {
           content: 'counter(list-item, var(--list-counter-style, decimal)) "."',
           position: 'absolute',
           fontWeight: '400',
           color: theme('colors.gray.500', defaultTheme.colors.gray[500]),
         },
-        'ul > li': {
+        'ul:not(.unprose) > li': {
           position: 'relative',
         },
-        'ul > li::before': {
+        'ul:not(.unprose) > li::before': {
           content: '""',
           position: 'absolute',
           backgroundColor: theme('colors.gray.300', defaultTheme.colors.gray[300]),
           borderRadius: '50%',
         },
-        hr: {
+        'hr:not(.unprose)': {
           borderColor: theme('colors.gray.200', defaultTheme.colors.gray[200]),
           borderTopWidth: 1,
         },
-        blockquote: {
+        'blockquote:not(.unprose)': {
           fontWeight: '500',
           fontStyle: 'italic',
           color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
@@ -84,50 +84,50 @@ module.exports = (theme) => ({
           borderLeftColor: theme('colors.gray.200', defaultTheme.colors.gray[200]),
           quotes: '"\\201C""\\201D""\\2018""\\2019"',
         },
-        'blockquote p:first-of-type::before': {
+        'blockquote:not(.unprose) p:first-of-type::before': {
           content: 'open-quote',
         },
-        'blockquote p:last-of-type::after': {
+        'blockquote:not(.unprose) p:last-of-type::after': {
           content: 'close-quote',
         },
-        h1: {
+        'h1:not(.unprose)': {
           color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
           fontWeight: '800',
         },
-        h2: {
+        'h2:not(.unprose)': {
           color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
           fontWeight: '700',
         },
-        h3: {
+        'h3:not(.unprose)': {
           color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
           fontWeight: '600',
         },
-        h4: {
+        'h4:not(.unprose)': {
           color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
           fontWeight: '600',
         },
-        'figure figcaption': {
+        'figure:not(.unprose) figcaption': {
           color: theme('colors.gray.500', defaultTheme.colors.gray[500]),
         },
-        code: {
+        'code:not(.unprose)': {
           color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
           fontWeight: '600',
         },
-        'code::before': {
+        'code:not(.unprose)::before': {
           content: '"`"',
         },
-        'code::after': {
+        'code:not(.unprose)::after': {
           content: '"`"',
         },
-        'a code': {
+        'a:not(.unprose) code': {
           color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
         },
-        pre: {
+        'pre:not(.unprose)': {
           color: theme('colors.gray.200', defaultTheme.colors.gray[200]),
           backgroundColor: theme('colors.gray.800', defaultTheme.colors.gray[800]),
           overflowX: 'auto',
         },
-        'pre code': {
+        'pre:not(.unprose) code': {
           backgroundColor: 'transparent',
           borderWidth: '0',
           borderRadius: '0',
@@ -138,111 +138,111 @@ module.exports = (theme) => ({
           fontFamily: 'inherit',
           lineHeight: 'inherit',
         },
-        'pre code::before': {
+        'pre:not(.unprose) code::before': {
           content: 'none',
         },
-        'pre code::after': {
+        'pre:not(.unprose) code::after': {
           content: 'none',
         },
-        table: {
+        'table:not(.unprose)': {
           width: '100%',
           tableLayout: 'auto',
           textAlign: 'left',
           marginTop: em(32, 16),
           marginBottom: em(32, 16),
         },
-        thead: {
+        'thead:not(.unprose)': {
           color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
           fontWeight: '600',
           borderBottomWidth: '1px',
           borderBottomColor: theme('colors.gray.300', defaultTheme.colors.gray[300]),
         },
-        'thead th': {
+        'thead:not(.unprose) th': {
           verticalAlign: 'bottom',
         },
-        'tbody tr': {
+        'tbody:not(.unprose) tr': {
           borderBottomWidth: '1px',
           borderBottomColor: theme('colors.gray.200', defaultTheme.colors.gray[200]),
         },
-        'tbody tr:last-child': {
+        'tbody:not(.unprose) tr:last-child': {
           borderBottomWidth: '0',
         },
-        'tbody td': {
+        'tbody:not(.unprose) td': {
           verticalAlign: 'top',
         },
       },
       {
         fontSize: rem(16),
         lineHeight: round(28 / 16),
-        p: {
+        'p:not(.unprose)': {
           marginTop: em(20, 16),
           marginBottom: em(20, 16),
         },
-        '[class~="lead"]': {
+        '[class~="lead"]:not(.unprose)': {
           fontSize: em(20, 16),
           lineHeight: round(32 / 20),
           marginTop: em(24, 20),
           marginBottom: em(24, 20),
         },
-        blockquote: {
+        'blockquote:not(.unprose)': {
           marginTop: em(32, 20),
           marginBottom: em(32, 20),
           paddingLeft: em(20, 20),
         },
-        h1: {
+        'h1:not(.unprose)': {
           fontSize: em(36, 16),
           marginTop: '0',
           marginBottom: em(32, 36),
           lineHeight: round(40 / 36),
         },
-        h2: {
+        'h2:not(.unprose)': {
           fontSize: em(24, 16),
           marginTop: em(48, 24),
           marginBottom: em(24, 24),
           lineHeight: round(32 / 24),
         },
-        h3: {
+        'h3:not(.unprose)': {
           fontSize: em(20, 16),
           marginTop: em(32, 20),
           marginBottom: em(12, 20),
           lineHeight: round(32 / 20),
         },
-        h4: {
+        'h4:not(.unprose)': {
           marginTop: em(24, 16),
           marginBottom: em(8, 16),
           lineHeight: round(24 / 16),
         },
-        img: {
+        'img:not(.unprose)': {
           marginTop: em(32, 16),
           marginBottom: em(32, 16),
         },
-        video: {
+        'video:not(.unprose)': {
           marginTop: em(32, 16),
           marginBottom: em(32, 16),
         },
-        figure: {
+        'figure:not(.unprose)': {
           marginTop: em(32, 16),
           marginBottom: em(32, 16),
         },
-        'figure > *': {
+        'figure:not(.unprose) > *': {
           marginTop: '0',
           marginBottom: '0',
         },
-        'figure figcaption': {
+        'figure:not(.unprose) figcaption': {
           fontSize: em(14, 16),
           lineHeight: round(20 / 14),
           marginTop: em(12, 14),
         },
-        code: {
+        'code:not(.unprose)': {
           fontSize: em(14, 16),
         },
-        'h2 code': {
+        'h2:not(.unprose) code': {
           fontSize: em(21, 24),
         },
-        'h3 code': {
+        'h3:not(.unprose) code': {
           fontSize: em(18, 20),
         },
-        pre: {
+        'pre:not(.unprose)': {
           fontSize: em(14, 16),
           lineHeight: round(24 / 14),
           marginTop: em(24, 14),
@@ -253,94 +253,94 @@ module.exports = (theme) => ({
           paddingBottom: em(12, 14),
           paddingLeft: em(16, 14),
         },
-        ol: {
+        'ol:not(.unprose)': {
           marginTop: em(20, 16),
           marginBottom: em(20, 16),
         },
-        ul: {
+        'ul:not(.unprose)': {
           marginTop: em(20, 16),
           marginBottom: em(20, 16),
         },
-        li: {
+        'li:not(.unprose)': {
           marginTop: em(8, 16),
           marginBottom: em(8, 16),
         },
-        'ol > li': {
+        'ol:not(.unprose) > li': {
           paddingLeft: em(28, 16),
         },
-        'ol > li::before': {
+        'ol:not(.unprose) > li::before': {
           left: '0',
         },
-        'ul > li': {
+        'ul:not(.unprose) > li': {
           paddingLeft: em(28, 16),
         },
-        'ul > li::before': {
+        'ul:not(.unprose) > li::before': {
           width: em(6, 16),
           height: em(6, 16),
           top: `calc(${em(28 / 2, 16)} - ${em(3, 16)})`,
           left: em(4, 16),
         },
-        '> ul > li p': {
+        '> ul:not(.unprose) > li p': {
           marginTop: em(12, 16),
           marginBottom: em(12, 16),
         },
-        '> ul > li > *:first-child': {
+        '> ul:not(.unprose) > li > *:first-child': {
           marginTop: em(20, 16),
         },
-        '> ul > li > *:last-child': {
+        '> ul:not(.unprose) > li > *:last-child': {
           marginBottom: em(20, 16),
         },
-        '> ol > li > *:first-child': {
+        '> ol:not(.unprose) > li > *:first-child': {
           marginTop: em(20, 16),
         },
-        '> ol > li > *:last-child': {
+        '> ol:not(.unprose) > li > *:last-child': {
           marginBottom: em(20, 16),
         },
-        'ul ul, ul ol, ol ul, ol ol': {
+        'ul:not(.unprose) ul, ul:not(.unprose) ol, ol:not(.unprose) ul, ol:not(.unprose) ol': {
           marginTop: em(12, 16),
           marginBottom: em(12, 16),
         },
-        hr: {
+        'hr:not(.unprose)': {
           marginTop: em(48, 16),
           marginBottom: em(48, 16),
         },
-        'hr + *': {
+        'hr + *:not(.unprose)': {
           marginTop: '0',
         },
-        'h2 + *': {
+        'h2:not(.unprose) + *:not(.unprose)': {
           marginTop: '0',
         },
-        'h3 + *': {
+        'h3:not(.unprose) + *:not(.unprose)': {
           marginTop: '0',
         },
-        'h4 + *': {
+        'h4 + *:not(.unprose)': {
           marginTop: '0',
         },
-        table: {
+        'table:not(.unprose)': {
           fontSize: em(14, 16),
           lineHeight: round(24 / 14),
         },
-        'thead th': {
+        'thead:not(.unprose) th': {
           paddingRight: em(8, 14),
           paddingBottom: em(8, 14),
           paddingLeft: em(8, 14),
         },
-        'thead th:first-child': {
+        'thead:not(.unprose) th:first-child': {
           paddingLeft: '0',
         },
-        'thead th:last-child': {
+        'thead:not(.unprose) th:last-child': {
           paddingRight: '0',
         },
-        'tbody td': {
+        'tbody:not(.unprose) td': {
           paddingTop: em(8, 14),
           paddingRight: em(8, 14),
           paddingBottom: em(8, 14),
           paddingLeft: em(8, 14),
         },
-        'tbody td:first-child': {
+        'tbody:not(.unprose) td:first-child': {
           paddingLeft: '0',
         },
-        'tbody td:last-child': {
+        'tbody:not(.unprose) td:last-child': {
           paddingRight: '0',
         },
       },
@@ -359,75 +359,75 @@ module.exports = (theme) => ({
       {
         fontSize: rem(14),
         lineHeight: round(24 / 14),
-        p: {
+        'p:not(.unprose)': {
           marginTop: em(16, 14),
           marginBottom: em(16, 14),
         },
-        '[class~="lead"]': {
+        '[class~="lead"]:not(.unprose)': {
           fontSize: em(18, 14),
           lineHeight: round(28 / 18),
           marginTop: em(16, 18),
           marginBottom: em(16, 18),
         },
-        blockquote: {
+        'blockquote:not(.unprose)': {
           marginTop: em(24, 18),
           marginBottom: em(24, 18),
           paddingLeft: em(20, 18),
         },
-        h1: {
+        'h1:not(.unprose)': {
           fontSize: em(30, 14),
           marginTop: '0',
           marginBottom: em(24, 30),
           lineHeight: round(36 / 30),
         },
-        h2: {
+        'h2:not(.unprose)': {
           fontSize: em(20, 14),
           marginTop: em(32, 20),
           marginBottom: em(16, 20),
           lineHeight: round(28 / 20),
         },
-        h3: {
+        'h3:not(.unprose)': {
           fontSize: em(18, 14),
           marginTop: em(28, 18),
           marginBottom: em(8, 18),
           lineHeight: round(28 / 18),
         },
-        h4: {
+        'h4:not(.unprose)': {
           marginTop: em(20, 14),
           marginBottom: em(8, 14),
           lineHeight: round(20 / 14),
         },
-        img: {
+        'img:not(.unprose)': {
           marginTop: em(24, 14),
           marginBottom: em(24, 14),
         },
-        video: {
+        'video:not(.unprose)': {
           marginTop: em(24, 14),
           marginBottom: em(24, 14),
         },
-        figure: {
+        'figure:not(.unprose)': {
           marginTop: em(24, 14),
           marginBottom: em(24, 14),
         },
-        'figure > *': {
+        'figure:not(.unprose) > *': {
           marginTop: '0',
           marginBottom: '0',
         },
-        'figure figcaption': {
+        'figure:not(.unprose) figcaption': {
           fontSize: em(12, 14),
           lineHeight: round(16 / 12),
           marginTop: em(8, 12),
         },
-        code: {
+        'code:not(.unprose)': {
           fontSize: em(12, 14),
         },
-        'h2 code': {
+        'h2:not(.unprose) code': {
           fontSize: em(18, 20),
         },
-        'h3 code': {
+        'h3:not(.unprose) code': {
           fontSize: em(16, 18),
         },
-        pre: {
+        'pre:not(.unprose)': {
           fontSize: em(12, 14),
           lineHeight: round(20 / 12),
           marginTop: em(20, 12),
@@ -438,94 +438,95 @@ module.exports = (theme) => ({
           paddingBottom: em(8, 12),
           paddingLeft: em(12, 12),
         },
-        ol: {
+        'ol:not(.unprose)': {
           marginTop: em(16, 14),
           marginBottom: em(16, 14),
         },
-        ul: {
+        'ul:not(.unprose)': {
           marginTop: em(16, 14),
           marginBottom: em(16, 14),
         },
-        li: {
+        'li:not(.unprose)': {
           marginTop: em(4, 14),
           marginBottom: em(4, 14),
         },
-        'ol > li': {
+        'ol:not(.unprose) > li': {
           paddingLeft: em(22, 14),
         },
-        'ol > li::before': {
+        'ol:not(.unprose) > li::before': {
           left: '0',
         },
-        'ul > li': {
+        'ul:not(.unprose) > li': {
           paddingLeft: em(22, 14),
         },
-        'ul > li::before': {
+        'ul:not(.unprose) > li::before': {
           height: em(5, 14),
           width: em(5, 14),
           top: `calc(${em(24 / 2, 14)} - ${em(2.5, 14)})`,
           left: em(3, 14),
         },
-        '> ul > li p': {
+        '> ul:not(.unprose) > li p': {
           marginTop: em(8, 14),
           marginBottom: em(8, 14),
         },
-        '> ul > li > *:first-child': {
+        '> ul:not(.unprose) > li > *:first-child': {
           marginTop: em(16, 14),
         },
-        '> ul > li > *:last-child': {
+        '> ul:not(.unprose) > li > *:last-child': {
           marginBottom: em(16, 14),
         },
-        '> ol > li > *:first-child': {
+        '> ol:not(.unprose) > li > *:first-child': {
           marginTop: em(16, 14),
         },
-        '> ol > li > *:last-child': {
+        '> ol:not(.unprose) > li > *:last-child': {
           marginBottom: em(16, 14),
         },
-        'ul ul, ul ol, ol ul, ol ol': {
+        'ul:not(.unprose) ul, ul ol, ol ul, ol ol': {
           marginTop: em(8, 14),
           marginBottom: em(8, 14),
         },
-        hr: {
+        'hr:not(.unprose)': {
           marginTop: em(40, 14),
           marginBottom: em(40, 14),
         },
-        'hr + *': {
+        'hr + *:not(.unprose)': {
           marginTop: '0',
         },
-        'h2 + *': {
+        'h2:not(.unprose) + *': {
           marginTop: '0',
         },
-        'h3 + *': {
+        'h3:not(.unprose) + *': {
           marginTop: '0',
         },
-        'h4 + *': {
+
+        'h4 + *:not(.unprose)': {
           marginTop: '0',
         },
-        table: {
+        'table:not(.unprose)': {
           fontSize: em(12, 14),
           lineHeight: round(18 / 12),
         },
-        'thead th': {
+        'thead:not(.unprose) th': {
           paddingRight: em(12, 12),
           paddingBottom: em(8, 12),
           paddingLeft: em(12, 12),
         },
-        'thead th:first-child': {
+        'thead:not(.unprose) th:first-child': {
           paddingLeft: '0',
         },
-        'thead th:last-child': {
+        'thead:not(.unprose) th:last-child': {
           paddingRight: '0',
         },
-        'tbody td': {
+        'tbody:not(.unprose) td': {
           paddingTop: em(8, 12),
           paddingRight: em(12, 12),
           paddingBottom: em(8, 12),
           paddingLeft: em(12, 12),
         },
-        'tbody td:first-child': {
+        'tbody:not(.unprose) td:first-child': {
           paddingLeft: '0',
         },
-        'tbody td:last-child': {
+        'tbody:not(.unprose) td:last-child': {
           paddingRight: '0',
         },
       },
@@ -544,75 +545,75 @@ module.exports = (theme) => ({
       {
         fontSize: rem(18),
         lineHeight: round(32 / 18),
-        p: {
+        'p:not(.unprose)': {
           marginTop: em(24, 18),
           marginBottom: em(24, 18),
         },
-        '[class~="lead"]': {
+        '[class~="lead"]:not(.unprose)': {
           fontSize: em(22, 18),
           lineHeight: round(32 / 22),
           marginTop: em(24, 22),
           marginBottom: em(24, 22),
         },
-        blockquote: {
+        'blockquote:not(.unprose)': {
           marginTop: em(40, 24),
           marginBottom: em(40, 24),
           paddingLeft: em(24, 24),
         },
-        h1: {
+        'h1:not(.unprose)': {
           fontSize: em(48, 18),
           marginTop: '0',
           marginBottom: em(40, 48),
           lineHeight: round(48 / 48),
         },
-        h2: {
+        'h2:not(.unprose)': {
           fontSize: em(30, 18),
           marginTop: em(56, 30),
           marginBottom: em(32, 30),
           lineHeight: round(40 / 30),
         },
-        h3: {
+        'h3:not(.unprose)': {
           fontSize: em(24, 18),
           marginTop: em(40, 24),
           marginBottom: em(16, 24),
           lineHeight: round(36 / 24),
         },
-        h4: {
+        'h4:not(.unprose)': {
           marginTop: em(32, 18),
           marginBottom: em(8, 18),
           lineHeight: round(28 / 18),
         },
-        img: {
+        'img:not(.unprose)': {
           marginTop: em(32, 18),
           marginBottom: em(32, 18),
         },
-        video: {
+        'video:not(.unprose)': {
           marginTop: em(32, 18),
           marginBottom: em(32, 18),
         },
-        figure: {
+        'figure:not(.unprose)': {
           marginTop: em(32, 18),
           marginBottom: em(32, 18),
         },
-        'figure > *': {
+        'figure:not(.unprose) > *': {
           marginTop: '0',
           marginBottom: '0',
         },
-        'figure figcaption': {
+        'figure:not(.unprose) figcaption': {
           fontSize: em(16, 18),
           lineHeight: round(24 / 16),
           marginTop: em(16, 16),
         },
-        code: {
+        'code:not(.unprose)': {
           fontSize: em(16, 18),
         },
-        'h2 code': {
+        'h2:not(.unprose) code': {
           fontSize: em(26, 30),
         },
-        'h3 code': {
+        'h3:not(.unprose) code': {
           fontSize: em(21, 24),
         },
-        pre: {
+        'pre:not(.unprose)': {
           fontSize: em(16, 18),
           lineHeight: round(28 / 16),
           marginTop: em(32, 16),
@@ -623,94 +624,95 @@ module.exports = (theme) => ({
           paddingBottom: em(16, 16),
           paddingLeft: em(24, 16),
         },
-        ol: {
+        'ol:not(.unprose)': {
           marginTop: em(24, 18),
           marginBottom: em(24, 18),
         },
-        ul: {
+        'ul:not(.unprose)': {
           marginTop: em(24, 18),
           marginBottom: em(24, 18),
         },
-        li: {
+        'li:not(.unprose)': {
           marginTop: em(12, 18),
           marginBottom: em(12, 18),
         },
-        'ol > li': {
+        'ol:not(.unprose) > li': {
           paddingLeft: em(30, 18),
         },
-        'ol > li::before': {
+        'ol:not(.unprose) > li::before': {
           left: '0',
         },
-        'ul > li': {
+        'ul:not(.unprose) > li': {
           paddingLeft: em(30, 18),
         },
-        'ul > li::before': {
+        'ul:not(.unprose) > li::before': {
           width: em(6, 18),
           height: em(6, 18),
           top: `calc(${em(32 / 2, 18)} - ${em(3, 18)})`,
           left: em(4, 18),
         },
-        '> ul > li p': {
+        '> ul:not(.unprose) > li p': {
           marginTop: em(16, 18),
           marginBottom: em(16, 18),
         },
-        '> ul > li > *:first-child': {
+        '> ul:not(.unprose) > li > *:first-child': {
           marginTop: em(24, 18),
         },
-        '> ul > li > *:last-child': {
+        '> ul:not(.unprose) > li > *:last-child': {
           marginBottom: em(24, 18),
         },
-        '> ol > li > *:first-child': {
+        '> ol:not(.unprose) > li > *:first-child': {
           marginTop: em(24, 18),
         },
-        '> ol > li > *:last-child': {
+        '> ol:not(.unprose) > li > *:last-child': {
           marginBottom: em(24, 18),
         },
-        'ul ul, ul ol, ol ul, ol ol': {
+        'ul:not(.unprose) ul, ul ol, ol ul, ol ol': {
           marginTop: em(16, 18),
           marginBottom: em(16, 18),
         },
-        hr: {
+        'hr:not(.unprose)': {
           marginTop: em(56, 18),
           marginBottom: em(56, 18),
         },
-        'hr + *': {
+        'hr + *:not(.unprose)': {
           marginTop: '0',
         },
-        'h2 + *': {
+        'h2:not(.unprose) + *': {
           marginTop: '0',
         },
-        'h3 + *': {
+        'h3:not(.unprose) + *': {
           marginTop: '0',
         },
-        'h4 + *': {
+
+        'h4 + *:not(.unprose)': {
           marginTop: '0',
         },
-        table: {
+        'table:not(.unprose)': {
           fontSize: em(16, 18),
           lineHeight: round(24 / 16),
         },
-        'thead th': {
+        'thead:not(.unprose) th': {
           paddingRight: em(12, 16),
           paddingBottom: em(12, 16),
           paddingLeft: em(12, 16),
         },
-        'thead th:first-child': {
+        'thead:not(.unprose) th:first-child': {
           paddingLeft: '0',
         },
-        'thead th:last-child': {
+        'thead:not(.unprose) th:last-child': {
           paddingRight: '0',
         },
-        'tbody td': {
+        'tbody:not(.unprose) td': {
           paddingTop: em(12, 16),
           paddingRight: em(12, 16),
           paddingBottom: em(12, 16),
           paddingLeft: em(12, 16),
         },
-        'tbody td:first-child': {
+        'tbody:not(.unprose) td:first-child': {
           paddingLeft: '0',
         },
-        'tbody td:last-child': {
+        'tbody:not(.unprose) td:last-child': {
           paddingRight: '0',
         },
       },
@@ -729,75 +731,75 @@ module.exports = (theme) => ({
       {
         fontSize: rem(20),
         lineHeight: round(36 / 20),
-        p: {
+        'p:not(.unprose)': {
           marginTop: em(24, 20),
           marginBottom: em(24, 20),
         },
-        '[class~="lead"]': {
+        '[class~="lead"]:not(.unprose)': {
           fontSize: em(24, 20),
           lineHeight: round(36 / 24),
           marginTop: em(24, 24),
           marginBottom: em(24, 24),
         },
-        blockquote: {
+        'blockquote:not(.unprose)': {
           marginTop: em(48, 30),
           marginBottom: em(48, 30),
           paddingLeft: em(32, 30),
         },
-        h1: {
+        'h1:not(.unprose)': {
           fontSize: em(56, 20),
           marginTop: '0',
           marginBottom: em(48, 56),
           lineHeight: round(56 / 56),
         },
-        h2: {
+        'h2:not(.unprose)': {
           fontSize: em(36, 20),
           marginTop: em(56, 36),
           marginBottom: em(32, 36),
           lineHeight: round(40 / 36),
         },
-        h3: {
+        'h3:not(.unprose)': {
           fontSize: em(30, 20),
           marginTop: em(48, 30),
           marginBottom: em(20, 30),
           lineHeight: round(40 / 30),
         },
-        h4: {
+        'h4:not(.unprose)': {
           marginTop: em(36, 20),
           marginBottom: em(12, 20),
           lineHeight: round(32 / 20),
         },
-        img: {
+        'img:not(.unprose)': {
           marginTop: em(40, 20),
           marginBottom: em(40, 20),
         },
-        video: {
+        'video:not(.unprose)': {
           marginTop: em(40, 20),
           marginBottom: em(40, 20),
         },
-        figure: {
+        'figure:not(.unprose)': {
           marginTop: em(40, 20),
           marginBottom: em(40, 20),
         },
-        'figure > *': {
+        'figure:not(.unprose) > *': {
           marginTop: '0',
           marginBottom: '0',
         },
-        'figure figcaption': {
+        'figure:not(.unprose) figcaption': {
           fontSize: em(18, 20),
           lineHeight: round(28 / 18),
           marginTop: em(18, 18),
         },
-        code: {
+        'code:not(.unprose)': {
           fontSize: em(18, 20),
         },
-        'h2 code': {
+        'h2:not(.unprose) code': {
           fontSize: em(31, 36),
         },
-        'h3 code': {
+        'h3:not(.unprose) code': {
           fontSize: em(27, 30),
         },
-        pre: {
+        'pre:not(.unprose)': {
           fontSize: em(18, 20),
           lineHeight: round(32 / 18),
           marginTop: em(36, 18),
@@ -808,94 +810,95 @@ module.exports = (theme) => ({
           paddingBottom: em(20, 18),
           paddingLeft: em(24, 18),
         },
-        ol: {
+        'ol:not(.unprose)': {
           marginTop: em(24, 20),
           marginBottom: em(24, 20),
         },
-        ul: {
+        'ul:not(.unprose)': {
           marginTop: em(24, 20),
           marginBottom: em(24, 20),
         },
-        li: {
+        'li:not(.unprose)': {
           marginTop: em(12, 20),
           marginBottom: em(12, 20),
         },
-        'ol > li': {
+        'ol:not(.unprose) > li': {
           paddingLeft: em(36, 20),
         },
-        'ol > li::before': {
+        'ol:not(.unprose) > li::before': {
           left: '0',
         },
-        'ul > li': {
+        'ul:not(.unprose) > li': {
           paddingLeft: em(36, 20),
         },
-        'ul > li::before': {
+        'ul:not(.unprose) > li::before': {
           width: em(7, 20),
           height: em(7, 20),
           top: `calc(${em(36 / 2, 20)} - ${em(3.5, 20)})`,
           left: em(5, 20),
         },
-        '> ul > li p': {
+        '> ul:not(.unprose) > li p': {
           marginTop: em(16, 20),
           marginBottom: em(16, 20),
         },
-        '> ul > li > *:first-child': {
+        '> ul:not(.unprose) > li > *:first-child': {
           marginTop: em(24, 20),
         },
-        '> ul > li > *:last-child': {
+        '> ul:not(.unprose) > li > *:last-child': {
           marginBottom: em(24, 20),
         },
-        '> ol > li > *:first-child': {
+        '> ol:not(.unprose) > li > *:first-child': {
           marginTop: em(24, 20),
         },
-        '> ol > li > *:last-child': {
+        '> ol:not(.unprose) > li > *:last-child': {
           marginBottom: em(24, 20),
         },
-        'ul ul, ul ol, ol ul, ol ol': {
+        'ul:not(.unprose) ul, ul ol, ol ul, ol ol': {
           marginTop: em(16, 20),
           marginBottom: em(16, 20),
         },
-        hr: {
+        'hr:not(.unprose)': {
           marginTop: em(56, 20),
           marginBottom: em(56, 20),
         },
         'hr + *': {
           marginTop: '0',
         },
-        'h2 + *': {
+        'h2:not(.unprose) + *': {
           marginTop: '0',
         },
-        'h3 + *': {
+        'h3:not(.unprose) + *': {
           marginTop: '0',
         },
-        'h4 + *': {
+
+        'h4 + *:not(.unprose)': {
           marginTop: '0',
         },
-        table: {
+        'table:not(.unprose)': {
           fontSize: em(18, 20),
           lineHeight: round(28 / 18),
         },
-        'thead th': {
+        'thead:not(.unprose) th': {
           paddingRight: em(12, 18),
           paddingBottom: em(16, 18),
           paddingLeft: em(12, 18),
         },
-        'thead th:first-child': {
+        'thead:not(.unprose) th:first-child': {
           paddingLeft: '0',
         },
-        'thead th:last-child': {
+        'thead:not(.unprose) th:last-child': {
           paddingRight: '0',
         },
-        'tbody td': {
+        'tbody:not(.unprose) td': {
           paddingTop: em(16, 18),
           paddingRight: em(12, 18),
           paddingBottom: em(16, 18),
           paddingLeft: em(12, 18),
         },
-        'tbody td:first-child': {
+        'tbody:not(.unprose) td:first-child': {
           paddingLeft: '0',
         },
-        'tbody td:last-child': {
+        'tbody:not(.unprose) td:last-child': {
           paddingRight: '0',
         },
       },
@@ -914,75 +917,75 @@ module.exports = (theme) => ({
       {
         fontSize: rem(24),
         lineHeight: round(40 / 24),
-        p: {
+        'p:not(.unprose)': {
           marginTop: em(32, 24),
           marginBottom: em(32, 24),
         },
-        '[class~="lead"]': {
+        '[class~="lead"]:not(.unprose)': {
           fontSize: em(30, 24),
           lineHeight: round(44 / 30),
           marginTop: em(32, 30),
           marginBottom: em(32, 30),
         },
-        blockquote: {
+        'blockquote:not(.unprose)': {
           marginTop: em(64, 36),
           marginBottom: em(64, 36),
           paddingLeft: em(40, 36),
         },
-        h1: {
+        'h1:not(.unprose)': {
           fontSize: em(64, 24),
           marginTop: '0',
           marginBottom: em(56, 64),
           lineHeight: round(64 / 64),
         },
-        h2: {
+        'h2:not(.unprose)': {
           fontSize: em(48, 24),
           marginTop: em(72, 48),
           marginBottom: em(40, 48),
           lineHeight: round(52 / 48),
         },
-        h3: {
+        'h3:not(.unprose)': {
           fontSize: em(36, 24),
           marginTop: em(56, 36),
           marginBottom: em(24, 36),
           lineHeight: round(44 / 36),
         },
-        h4: {
+        'h4:not(.unprose)': {
           marginTop: em(40, 24),
           marginBottom: em(16, 24),
           lineHeight: round(36 / 24),
         },
-        img: {
+        'img:not(.unprose)': {
           marginTop: em(48, 24),
           marginBottom: em(48, 24),
         },
-        video: {
+        'video:not(.unprose)': {
           marginTop: em(48, 24),
           marginBottom: em(48, 24),
         },
-        figure: {
+        'figure:not(.unprose)': {
           marginTop: em(48, 24),
           marginBottom: em(48, 24),
         },
-        'figure > *': {
+        'figure:not(.unprose) > *': {
           marginTop: '0',
           marginBottom: '0',
         },
-        'figure figcaption': {
+        'figure:not(.unprose) figcaption': {
           fontSize: em(20, 24),
           lineHeight: round(32 / 20),
           marginTop: em(20, 20),
         },
-        code: {
+        'code:not(.unprose)': {
           fontSize: em(20, 24),
         },
-        'h2 code': {
+        'h2:not(.unprose) code': {
           fontSize: em(42, 48),
         },
-        'h3 code': {
+        'h3:not(.unprose) code': {
           fontSize: em(32, 36),
         },
-        pre: {
+        'pre:not(.unprose)': {
           fontSize: em(20, 24),
           lineHeight: round(36 / 20),
           marginTop: em(40, 20),
@@ -993,94 +996,95 @@ module.exports = (theme) => ({
           paddingBottom: em(24, 20),
           paddingLeft: em(32, 20),
         },
-        ol: {
+        'ol:not(.unprose)': {
           marginTop: em(32, 24),
           marginBottom: em(32, 24),
         },
-        ul: {
+        'ul:not(.unprose)': {
           marginTop: em(32, 24),
           marginBottom: em(32, 24),
         },
-        li: {
+        'li:not(.unprose)': {
           marginTop: em(12, 24),
           marginBottom: em(12, 24),
         },
-        'ol > li': {
+        'ol:not(.unprose) > li': {
           paddingLeft: em(40, 24),
         },
-        'ol > li::before': {
+        'ol:not(.unprose) > li::before': {
           left: '0',
         },
-        'ul > li': {
+        'ul:not(.unprose) > li': {
           paddingLeft: em(40, 24),
         },
-        'ul > li::before': {
+        'ul:not(.unprose) > li::before': {
           width: em(8, 24),
           height: em(8, 24),
           top: `calc(${em(40 / 2, 24)} - ${em(4, 24)})`,
           left: em(6, 24),
         },
-        '> ul > li p': {
+        '> ul:not(.unprose) > li p': {
           marginTop: em(20, 24),
           marginBottom: em(20, 24),
         },
-        '> ul > li > *:first-child': {
+        '> ul:not(.unprose) > li > *:first-child': {
           marginTop: em(32, 24),
         },
-        '> ul > li > *:last-child': {
+        '> ul:not(.unprose) > li > *:last-child': {
           marginBottom: em(32, 24),
         },
-        '> ol > li > *:first-child': {
+        '> ol:not(.unprose) > li > *:first-child': {
           marginTop: em(32, 24),
         },
-        '> ol > li > *:last-child': {
+        '> ol:not(.unprose) > li > *:last-child': {
           marginBottom: em(32, 24),
         },
-        'ul ul, ul ol, ol ul, ol ol': {
+        'ul:not(.unprose) ul, ul ol, ol ul, ol ol': {
           marginTop: em(16, 24),
           marginBottom: em(16, 24),
         },
-        hr: {
+        'hr:not(.unprose)': {
           marginTop: em(72, 24),
           marginBottom: em(72, 24),
         },
         'hr + *': {
           marginTop: '0',
         },
-        'h2 + *': {
+        'h2:not(.unprose) + *': {
           marginTop: '0',
         },
-        'h3 + *': {
+        'h3:not(.unprose) + *': {
           marginTop: '0',
         },
-        'h4 + *': {
+
+        'h4 + *:not(.unprose)': {
           marginTop: '0',
         },
-        table: {
+        'table:not(.unprose)': {
           fontSize: em(20, 24),
           lineHeight: round(28 / 20),
         },
-        'thead th': {
+        'thead:not(.unprose) th': {
           paddingRight: em(12, 20),
           paddingBottom: em(16, 20),
           paddingLeft: em(12, 20),
         },
-        'thead th:first-child': {
+        'thead:not(.unprose) th:first-child': {
           paddingLeft: '0',
         },
-        'thead th:last-child': {
+        'thead:not(.unprose) th:last-child': {
           paddingRight: '0',
         },
-        'tbody td': {
+        'tbody:not(.unprose) td': {
           paddingTop: em(16, 20),
           paddingRight: em(12, 20),
           paddingBottom: em(16, 20),
           paddingLeft: em(12, 20),
         },
-        'tbody td:first-child': {
+        'tbody:not(.unprose) td:first-child': {
           paddingLeft: '0',
         },
-        'tbody td:last-child': {
+        'tbody:not(.unprose) td:last-child': {
           paddingRight: '0',
         },
       },
@@ -1106,8 +1110,8 @@ module.exports = (theme) => ({
       [color]: {
         css: [
           {
-            a: { color: values[600] },
-            'a code': { color: values[600] },
+            'a:not(.unprose)': { color: values[600] },
+            'a:not(.unprose) code': { color: values[600] },
           },
         ],
       },
