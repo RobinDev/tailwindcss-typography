@@ -50,10 +50,10 @@ export default () => {
             <div className="max-w-2xl mx-auto">
               <MarkdownSampleUnprose />
             </div>
-            <div className="mx-auto prose">
+            <div className="mx-auto prose-sm prose sm:prose lg:prose-lg xl:prose-2xl">
               <MarkdownSampleUnprose />
             </div>
-            <div className="mx-auto prose">
+            <div className="mx-auto prose-sm prose sm:prose lg:prose-lg xl:prose-2xl">
               <MarkdownSample />
             </div>
           </div>

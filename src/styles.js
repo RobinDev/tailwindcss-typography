@@ -397,7 +397,7 @@ module.exports = (theme) => ({
           marginBottom: em(8, 14),
           lineHeight: round(20 / 14),
         },
-        '*:not(.unprose) img': {
+        'img:not(.unprose)': {
           marginTop: em(24, 14),
           marginBottom: em(24, 14),
         },
@@ -583,7 +583,7 @@ module.exports = (theme) => ({
           marginBottom: em(8, 18),
           lineHeight: round(28 / 18),
         },
-        '*:not(.unprose) img': {
+        'img:not(.unprose)': {
           marginTop: em(32, 18),
           marginBottom: em(32, 18),
         },
@@ -769,7 +769,7 @@ module.exports = (theme) => ({
           marginBottom: em(12, 20),
           lineHeight: round(32 / 20),
         },
-        '*:not(.unprose) img': {
+        'img:not(.unprose)': {
           marginTop: em(40, 20),
           marginBottom: em(40, 20),
         },
@@ -955,7 +955,7 @@ module.exports = (theme) => ({
           marginBottom: em(16, 24),
           lineHeight: round(36 / 24),
         },
-        '*:not(.unprose) img': {
+        'img:not(.unprose)': {
           marginTop: em(48, 24),
           marginBottom: em(48, 24),
         },
