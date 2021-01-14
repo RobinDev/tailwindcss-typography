@@ -1,6 +1,6 @@
 {
-  "name": "@tailwindcss/typography",
-  "version": "0.3.1",
+  "name": "tailwindcss-typography-unprose-fork",
+  "version": "0.3.21",
   "description": "A Tailwind CSS plugin for automatically styling plain HTML content with beautiful typographic defaults.",
   "main": "src/index.js",
   "files": [

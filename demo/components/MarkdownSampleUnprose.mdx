@@ -1,0 +1,107 @@
+<h2>Basic Typo</h2>
+
+<p class="unprose">A paragraph</p>
+<p class="text-4xl font-bold unprose">
+  A paragraph bolded with a{' '}
+  <a href="#" class="text-yellow-500">
+    colored link
+  </a>
+</p>
+<h1 class="unprose">H1 title</h1>
+<h2 class="unprose">H2 title</h2>
+<h3 class="unprose">H3 title</h3>
+<h4 class="unprose">H4 title</h4>
+
+<p class="unprose lead">
+  Until now, trying to style an article, document, or blog post with Tailwind has been a tedious
+  task that required a keen eye for typography and a lot of complex custom CSS.
+</p>
+
+<figure class="unprose">
+  <img
+    src="https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80"
+    alt=""
+  />
+  <figcaption>
+    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+    classical Latin literature from 45 BC, making it over 2000 years old.
+  </figcaption>
+</figure>
+
+<!-- this one works partially, still apply prose style on p -->
+
+<blockquote class="unprose">
+  <p>
+    Typography is pretty important if you don't want your stuff to look like trash. Make it good
+    then it won't be bad.
+  </p>
+  <p class="unprose">
+    Typography is pretty important if you don't want your stuff to look like trash. Make it good
+    then it won't be bad.
+  </p>
+</blockquote>
+
+<pre class="unprose">
+  <code class="language-html">
+    &lt;article class="prose"&gt; &lt;h1&gt;Garlic bread with cheese: What the science tells
+    us&lt;/h1&gt; &lt;p&gt; For years parents have espoused the health benefits of eating garlic
+    bread with cheese to their children, with the food earning such an iconic status in our culture
+    that kids will often dress up as warm, cheesy loaf for Halloween. &lt;/p&gt; &lt;p&gt; But a
+    recent study shows that the celebrated appetizer may be linked to a series of rabies cases
+    springing up around the country. &lt;/p&gt; &lt;!-- ... --&gt; &lt;/article&gt;
+  </code>
+</pre>
+
+<div class="mt-6 unprose"></div>
+
+<h2>Table</h2>
+
+<table class="unprose">
+  <thead>
+    <tr>
+      <th>Wrestler</th>
+      <th>Origin</th>
+      <th>Finisher</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bret "The Hitman" Hart</td>
+      <td>Calgary, AB</td>
+      <td>Sharpshooter</td>
+    </tr>
+    <tr>
+      <td>Stone Cold Steve Austin</td>
+      <td>Austin, TX</td>
+      <td>Stone Cold Stunner</td>
+    </tr>
+    <tr>
+      <td>Randy Savage</td>
+      <td>Sarasota, FL</td>
+      <td>Elbow Drop</td>
+    </tr>
+    <tr>
+      <td>Vader</td>
+      <td>Boulder, CO</td>
+      <td>Vader Bomb</td>
+    </tr>
+    <tr>
+      <td>Razor Ramon</td>
+      <td>Chuluota, FL</td>
+      <td>Razor's Edge</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Failed to unprose</h2>
+
+<ul class="unprose">
+  <li>
+    unstyle list item
+    <ul>
+      <li>not working, sub ul must have .unprose</li>
+    </ul>
+  </li>
+  <li>unstyle list item</li>
+  <li>unstyle list item</li>
+</ul>

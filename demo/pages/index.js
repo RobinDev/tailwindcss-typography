@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import MarkdownSample from '../components/MarkdownSample.mdx'
+import MarkdownSampleUnprose from '../components/MarkdownSampleUnprose.mdx'
 
 export default () => {
   return (
@@ -45,25 +46,14 @@ export default () => {
                 </a>
               </div>
             </div>
-            <div class="prose">
-              <ul class="unprose">
-                <li>unstyle list item</li>
-                <li>unstyle list item</li>
-                <li>unstyle list item</li>
-              </ul>
-              <pre class="unprose">
-                <code class="unprose">this works</code>
-              </pre>
+
+            <div className="max-w-2xl mx-auto">
+              <MarkdownSampleUnprose />
             </div>
             <div className="mx-auto prose-sm prose sm:prose lg:prose-lg xl:prose-2xl">
-              <ul class="unprose">
-                <li>unstyle list item</li>
-                <li>unstyle list item</li>
-                <li>unstyle list item</li>
-              </ul>
-              <pre class="unprose">
-                <code class="unprose">this works</code>
-              </pre>
+              <MarkdownSampleUnprose />
+            </div>
+            <div className="mx-auto prose-sm prose sm:prose lg:prose-lg xl:prose-2xl">
               <MarkdownSample />
             </div>
           </div>
