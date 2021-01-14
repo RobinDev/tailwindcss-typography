@@ -212,7 +212,7 @@ module.exports = (theme) => ({
           marginBottom: em(8, 16),
           lineHeight: round(24 / 16),
         },
-        '*:not(.unprose) img': {
+        'img:not(.unprose)': {
           marginTop: em(32, 16),
           marginBottom: em(32, 16),
         },
