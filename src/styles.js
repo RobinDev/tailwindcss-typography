@@ -18,7 +18,7 @@ module.exports = (theme) => ({
         '[class~="lead"]:not(.unprose)': {
           color: theme('colors.gray.600', defaultTheme.colors.gray[600]),
         },
-        '*:not(.unprose) a:not(.unprose)': {
+        '*:not(.unprose) a': {
           color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
           textDecoration: 'underline',
           fontWeight: '500',
@@ -119,7 +119,7 @@ module.exports = (theme) => ({
         'p:not(.unprose) > code::after': {
           content: '"`"',
         },
-        '*:not(.unprose) a:not(.unprose) code': {
+        '*:not(.unprose) a code': {
           color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
         },
         'pre:not(.unprose)': {
@@ -1110,8 +1110,8 @@ module.exports = (theme) => ({
       [color]: {
         css: [
           {
-            '*:not(.unprose) a:not(.unprose)': { color: values[600] },
-            '*:not(.unprose) a:not(.unprose) code': { color: values[600] },
+            '*:not(.unprose) a': { color: values[600] },
+            '*:not(.unprose) a code': { color: values[600] },
           },
         ],
       },

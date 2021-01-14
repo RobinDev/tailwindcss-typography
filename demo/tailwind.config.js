@@ -25,7 +25,23 @@ module.exports = {
       ],
     },
   },
-  theme: {},
+  theme: {
+    extend: {
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            color: '#333',
+            '*:not(.unprose) a': {
+              color: 'blue',
+              '&:hover': {
+                opacity: '0.75',
+              },
+            },
+          },
+        },
+      }),
+    },
+  },
   variants: {},
   plugins: [require('../src/index.js')],
 }
